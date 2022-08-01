@@ -1,24 +1,31 @@
-import logo from './logo.svg';
-import './App.css';
+import React, { useState } from "react";
+import Search from "./components/Search";
+import JSONData from "./MOCK_DATA.json";
+
+import "./App.css";
 
 function App() {
+  const [query, setQuery] = useState("");
+  const searchHandler = (value) => {
+    setQuery(value);
+  };
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <section className="container">
+      <Search onSearch={searchHandler} />
+      <div className="results">
+        <ul className="results__list">
+          {JSONData.filter((user) =>
+            user.first_name
+              .toLocaleLowerCase()
+              .includes(query.toLocaleLowerCase())
+          ).map((user, key) => (
+            <li className="results__item" key={key}>
+              {user.first_name}
+            </li>
+          ))}
+        </ul>
+      </div>
+    </section>
   );
 }
 
