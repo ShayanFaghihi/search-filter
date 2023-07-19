@@ -1,70 +1,88 @@
-# Getting Started with Create React App
+# React User List with Search Bar
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+This is a simple React project that displays a list of different user names and includes a search bar to filter the list dynamically. The project utilizes React, React's `useState` hook, and `useRef` hook, and uses modular CSS for styling.
 
-## Available Scripts
+## Features
 
-In the project directory, you can run:
+- Displays a list of user names.
+- Includes a search bar to filter the user list in real-time.
+- Utilizes React's `useState` hook to manage the list of users and the search query.
+- Uses `useRef` hook to access the DOM element of the search input.
 
-### `npm start`
+## Installation
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+To get started with the project, follow these steps:
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+1. Clone the repository:
 
-### `npm test`
+```
+git clone https://github.com/ShayanFaghihi/search-filter
+```
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+2. Change into the project directory:
 
-### `npm run build`
+```
+cd your-react-user-list
+```
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+3. Install the required dependencies:
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+```
+npm install
+```
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+4. Start the development server:
 
-### `npm run eject`
+```
+npm start
+```
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+The project should now be running on `http://localhost:3000`.
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+## How to Use
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+1. When you open the application, you will see a list of user names.
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+2. At the top of the page, there is a search bar.
 
-## Learn More
+3. Start typing in the search bar to filter the user list dynamically. The list will update in real-time to show only the names that match the search query.
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+## Technologies Used
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+- React: A JavaScript library for building user interfaces.
+- `useState` hook: Allows us to add state to functional components in React.
+- `useRef` hook: Provides a way to access and interact with DOM elements directly.
 
-### Code Splitting
+## Project Structure
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+The project is organized as follows:
 
-### Analyzing the Bundle Size
+```
+your-react-user-list/
+  ├── src/
+  │   ├── components/
+  │   │   ├── Results.js
+  │   │   └── Search.js
+  │   ├── App.js
+  │   └── index.js
+  ├── styles/
+  │   ├── Results.module.css
+  │   └── Search.module.css
+  ├── data/
+  │   └── users.js
+  └── README.md
+```
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+- The `components` directory contains the main components of the application: `UserList` and `SearchBar`.
+- The `App.js` file is the entry point of the application, rendering the components.
+- The `index.js` file sets up the React application and renders the `App` component into the root DOM element.
+- The `styles` directory contains modular CSS files for styling the components separately.
+- The `data` directory contains the sample user data used in the application.
 
-### Making a Progressive Web App
+## Contributing
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+If you find any issues with the project or want to add more features, feel free to open an issue or submit a pull request.
 
-### Advanced Configuration
+## License
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+This project is licensed under the [MIT License](LICENSE). Feel free to use and modify the code as per your needs.

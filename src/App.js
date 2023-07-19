@@ -3,8 +3,7 @@ import Search from "./components/Search";
 import Results from "./components/Results";
 
 import "./App.css";
-
-import users from "./users.json";
+import users from "./data/users.json";
 
 function App() {
   const [usersList, setUsersList] = useState(users);
@@ -14,7 +13,9 @@ function App() {
     } else if (query.length > 0) {
       setUsersList(
         users.filter((user) =>
-          user.first_name.toLocaleLowerCase().includes(query.toLocaleLowerCase())
+          user.first_name
+            .toLocaleLowerCase()
+            .includes(query.toLocaleLowerCase())
         )
       );
     }
