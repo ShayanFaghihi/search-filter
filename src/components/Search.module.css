@@ -1,0 +1,35 @@
+/* Search Field */
+.search-field {
+  width: 100%;
+  margin-bottom: 3rem;
+}
+
+.search-field input {
+  width: 80%;
+  background-color: #efefef;
+  border: none;
+  outline: none;
+  border-radius: 7px;
+  padding: 10px 1rem;
+  color: #333;
+  font-family: inherit;
+  font-size: 20px;
+}
+
+/* Search Field */
+.search-field {
+  width: 100%;
+  margin-bottom: 3rem;
+}
+
+.search-field input {
+  width: 80%;
+  background-color: #efefef;
+  border: none;
+  outline: none;
+  border-radius: 7px;
+  padding: 10px 1rem;
+  color: #333;
+  font-family: inherit;
+  font-size: 20px;
+}

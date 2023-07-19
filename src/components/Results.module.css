@@ -1,0 +1,26 @@
+/* Results */
+.results {
+  width: 100%;
+  column-count: 4;
+}
+
+@media (width < 680px) {
+  .results {
+    column-count: 2;
+  }
+}
+
+@media (width < 400px) {
+  .results {
+    column-count: 1;
+  }
+}
+
+.results__list {
+  list-style: none;
+}
+
+.results__item {
+  font-size: 1rem;
+  margin-bottom: 10px;
+}
