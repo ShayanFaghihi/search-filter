@@ -2,6 +2,10 @@
 
 This is a simple React project that displays a list of different user names and includes a search bar to filter the list dynamically. The project utilizes React, React's `useState` hook, and `useRef` hook, and uses modular CSS for styling.
 
+## Live Version
+
+[Live Version](https://shayan-search-filter.netlify.app)
+
 ## Features
 
 - Displays a list of user names.
@@ -82,7 +86,3 @@ your-react-user-list/
 ## Contributing
 
 If you find any issues with the project or want to add more features, feel free to open an issue or submit a pull request.
-
-## License
-
-This project is licensed under the [MIT License](LICENSE). Feel free to use and modify the code as per your needs.
